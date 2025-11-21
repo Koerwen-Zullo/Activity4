@@ -1,1 +1,1 @@
-CREATE DATABASE veterinay;
+CREATE DATABASE veterinary;
