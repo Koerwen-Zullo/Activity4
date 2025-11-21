@@ -48,7 +48,7 @@ CREATE TABLE invoices (
     FOREIGN KEY (appointid) REFERENCES appointments(appointid)
 );
 
-CREATE TABLE medica_records (
+CREATE TABLE medical_records (
     recordid SERIAL PRIMARY KEY,
     animalid INTEGER, 
     recorddate TIMESTAMP WITH TIME ZONE, 
