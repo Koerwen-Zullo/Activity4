@@ -28,3 +28,13 @@ CREATE TABLE appointments (
     reason VARCHAR(255),
     FOREIGN KEY (animalid) REFERENCES animals(animalid)
 );
+
+CREATE TABLE invoices (
+    invoiceid INT NOT NULL,
+    appointid INT, 
+    totalamount NUMERIC(10, 2),
+    paymentdate TIME,
+    PRIMARY KEY (invoiceid),
+    FOREIGN KEY (appointid) REFERENCES appointments(appointid)
+);
+
