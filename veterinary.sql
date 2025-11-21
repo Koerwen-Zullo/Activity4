@@ -83,3 +83,15 @@ INSERT INTO animals (animalid, name, species, breed, dateofbirth, gender, color,
 (8, 'Sophie', 'Dog', 'Poodle (Toy)', '2021-04-12', 'Female', 'White', 103),
 (9, 'Oliver', 'Bird', 'Cockatiel', '2023-06-30', 'Male', 'Yellow and Grey', 104),
 (10, 'Daisy', 'Dog', 'Labrador Retriever', '2020-10-22', 'Female', 'Yellow', 105);
+
+INSERT INTO appointments (appointid, animalid, appointdate, reason) VALUES 
+(1, 1, '2025-11-25', 'Annual wellness exam and vaccines'),
+(2, 5, '2025-11-25', 'Check up for persistent coughing'),
+(3, 3, '2025-11-26', 'Routine dental cleaning'),
+(4, 8, '2025-11-26', 'Follow-up for skin rash'),
+(5, 2, '2025-11-27', 'Emergency visit: broken leg'),
+(6, 7, '2025-11-27', 'Microchip implantation and registration'),
+(7, 4, '2025-11-28', 'Nail trim and grooming consultation'),
+(8, 10, '2025-11-28', 'Initial consultation for senior pet care'),
+(9, 6, '2025-11-29', 'Behavioral assessment for anxiety'),
+(10, 9, '2025-11-29', 'Blood work and general health panel');
