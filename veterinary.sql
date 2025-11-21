@@ -134,3 +134,5 @@ VALUES
 ALTER TABLE owners
 ADD COLUMN registereddate DATE;
 
+DELETE FROM appointments
+WHERE animalid = 7;
