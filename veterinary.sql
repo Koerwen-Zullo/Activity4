@@ -71,3 +71,15 @@ INSERT INTO owners (ownerid, ofirstname, olastname, address, phone, email) VALUE
 (8, 'David', 'Wilson', '5 Lakefront Way, Lakeside', '555-0108', 'davidw@email.com'),
 (9, 'Laura', 'Moore', '606 Maple St, Farmstead', '555-0109', 'laura.m@email.com'),
 (10, 'James', 'Taylor', '88 Schoolhouse Ln, Old Town', '555-0110', 'jamest@email.com');
+
+INSERT INTO animals (animalid, name, species, breed, dateofbirth, gender, color, ownerid) VALUES
+(1, 'Max', 'Dog', 'German Shepherd', '2020-05-15', 'Male', 'Black and Tan', 101),
+(2, 'Luna', 'Cat', 'Siamese', '2022-01-20', 'Female', 'Cream and Seal Point', 102),
+(3, 'Charlie', 'Dog', 'Golden Retriever', '2019-11-01', 'Male', 'Gold', 103),
+(4, 'Bella', 'Cat', 'Maine Coon', '2021-07-25', 'Female', 'Brown Tabby', 101),
+(5, 'Rocky', 'Dog', 'Beagle', '2023-03-10', 'Male', 'Tri-color', 104),
+(6, 'Lucy', 'Cat', 'Domestic Shorthair', '2202-09-05', 'Female', 'Calico', 105),
+(7, 'Milo', 'Rabbit', 'Netherland Dwarf', '2024-01-01', 'Male', 'Grey', 102),
+(8, 'Sophie', 'Dog', 'Poodle (Toy)', '2021-04-12', 'Female', 'White', 103),
+(9, 'Oliver', 'Bird', 'Cockatiel', '2023-06-30', 'Male', 'Yellow and Grey', 104),
+(10, 'Daisy', 'Dog', 'Labrador Retriever', '2020-10-22', 'Female', 'Yellow', 105);
