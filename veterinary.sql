@@ -39,3 +39,23 @@ CREATE TABLE doctors (
 );
 
 
+CREATE TABLE invoices (
+    invoiceid INT NOT NULL,
+    appointid INT, 
+    totalamount NUMERIC(10, 2),
+    paymentdate TIME,
+    PRIMARY KEY (invoiceid),
+    FOREIGN KEY (appointid) REFERENCES appointments(appointid)
+);
+
+CREATE TABLE medica_records (
+    recordid SERIAL PRIMARY KEY,
+    animalid INTEGER, 
+    recorddate TIMESTAMP WITH TIME ZONE, 
+    doctorid INTEGER, 
+    diagnosis TEXT,
+    prescription TEXT,
+    notes TEXT,
+    FOREIGN KEY (animalid) REFERENCES animals_table(animalid),
+    FOREIGN KEY (doctorid) REFERENCES doctors_table(doctorid)
+);
