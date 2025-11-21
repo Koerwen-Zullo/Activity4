@@ -145,4 +145,11 @@ SET dlastname = 'Reyes-Gonzales'
 WHERE dfirstname = 'Dr.Sofia';
 
 SELECT DISTINCT species
-FROM animals;~
+FROM animals;
+
+SELECT COUNT(*) AS emily_appointments
+FROM appointments a
+JOIN animals an ON a.animalid = an.animalid
+WHERE an.ownerid = 3;  
+
+
