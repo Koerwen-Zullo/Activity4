@@ -1,3 +1,3 @@
 ## Collaborators
 - Zullo, Koerwen, G.
-- Recio, Ivan, MI
+- Bonus, Ivan, R.
