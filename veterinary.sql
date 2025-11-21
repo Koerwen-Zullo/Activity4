@@ -152,4 +152,14 @@ FROM appointments a
 JOIN animals an ON a.animalid = an.animalid
 WHERE an.ownerid = 3;  
 
-
+SELECT 
+    A.name,
+    COUNT(P.appointid) AS AppointmentCount
+FROM 
+    appointments P
+JOIN 
+    animals A ON P.animalid = A.animalid
+GROUP BY 
+    A.name
+ORDER BY 
+    AppointmentCount DESC;
